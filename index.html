@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack-en-Poy - Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">🎮 Jack-en-Poy</h1>
+        <p class="game-subtitle">Rock • Paper • Scissors</p>
+       
+        <div class="scoreboard">
+            <div class="score-card">
+                <h3>Player</h3>
+                <div class="score" id="player-score">0</div>
+            </div>
+            <div class="score-card">
+                <h3>Computer</h3>
+                <div class="score" id="computer-score">0</div>
+            </div>
+            <div class="score-card">
+                <h3>Rounds</h3>
+                <div class="score" id="rounds-played">0</div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="battle-display" id="battle-display">
+                <div class="player-choice" id="player-choice">❓</div>
+                <div class="vs-text">VS</div>
+                <div class="computer-choice" id="computer-choice">❓</div>
+            </div>
+
+            <div class="result-message" id="result-message">Choose your weapon!</div>
+
+            <div class="choices">
+                <button class="choice-btn" data-choice="rock" title="Rock">🪨</button>
+                <button class="choice-btn" data-choice="paper" title="Paper">📄</button>
+                <button class="choice-btn" data-choice="scissors" title="Scissors">✂️</button>
+            </div>
+
+            <button class="play-btn" id="play-again-btn" style="display: none;">Play Again 🎲</button>
+        </div>
+
+        <div class="game-history" id="game-history" style="display: none;">
+            <h3>📊 Recent Games</h3>
+            <div id="history-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
